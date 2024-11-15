@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef RAZ_LOGGER_HPP
 #define RAZ_LOGGER_HPP
 
@@ -25,6 +23,7 @@ public:
   static void setLoggingFunction(std::function<void(LoggingLevel, const std::string&)> logFunc) { m_logFunc = std::move(logFunc); }
   static void resetLoggingFunction() { m_logFunc = nullptr; }
 
+  static void conditionalDebug(bool condition, std::string &&message);
   /// Prints an error message.
   /// \note Requires a logging level of "error" or above.
   /// \param message Message to be printed.

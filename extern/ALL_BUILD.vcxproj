@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0877DD20-DBA2-3A44-888A-F1BA48DF506C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\ZERO_CHECK.vcxproj">
+      <Project>{2694FF15-73C7-3BEA-B13F-4F90AC78EBE5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.vcxproj">
+      <Project>{87D772FB-32DC-3121-89FA-A1F8F5D7C7FC}</Project>
+      <Name>Catch2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.vcxproj">
+      <Project>{4713870A-91B9-3B0C-B384-FA91F57E338A}</Project>
+      <Name>GLEW</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.vcxproj">
+      <Project>{3DC9C9E8-F821-3755-ACBB-27CEA85F19EB}</Project>
+      <Name>GLFW</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.vcxproj">
+      <Project>{ED094543-AE6B-38B0-81A2-E48AB9D85731}</Project>
+      <Name>ImGui</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.vcxproj">
+      <Project>{9992A168-FC3E-3A1B-90F4-711DAF6B400B}</Project>
+      <Name>Lua</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.vcxproj">
+      <Project>{8A0124C8-9870-360D-9248-0865F1263268}</Project>
+      <Name>OpenXR</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.vcxproj">
+      <Project>{529941BB-11DB-3C8F-8F08-13CD09EE5B0D}</Project>
+      <Name>Tracy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.vcxproj">
+      <Project>{E0C6516D-7ACC-3813-8A8C-B9F6013409C0}</Project>
+      <Name>fastgltf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.vcxproj">
+      <Project>{477A5A36-D3F6-3F43-A07A-7207BA5F22FE}</Project>
+      <Name>simdjson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

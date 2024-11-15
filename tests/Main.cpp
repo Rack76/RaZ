@@ -7,6 +7,11 @@
 #include <catch2/catch_session.hpp>
 #include <catch2/catch_tostring.hpp>
 
+class Test
+{
+
+};
+
 int main(int argc, char* argv[]) {
   // Increasing precision output for floating-point values
   Catch::StringMaker<float>::precision  = std::numeric_limits<float>::digits10 + 3;

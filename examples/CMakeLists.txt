@@ -61,6 +61,9 @@ if (RAZ_USE_WINDOW OR RAZ_USE_EMSCRIPTEN)
     add_executable(RaZ_PhysicsDemo physicsDemo.cpp)
     target_link_libraries(RaZ_PhysicsDemo RaZ_Examples)
 
+    add_executable(RaZ_ECSDemo ECSDemo.cpp)
+    target_link_libraries(RaZ_ECSDemo RaZ_Examples)
+
     if (RAZ_USE_LUA)
         add_executable(RaZ_ScriptDemo scriptDemo.cpp)
         target_link_libraries(RaZ_ScriptDemo RaZ_Examples)

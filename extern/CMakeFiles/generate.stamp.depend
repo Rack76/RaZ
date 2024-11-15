@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckFunctionExists.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt
+C:/Users/rgter/Documents/programmation/RaZ/extern/Catch2.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/GLEW.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/GLFW.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/ImGui.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/Lua.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/OpenXR.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/Sol2.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/Tracy.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/catch/catch2/catch_user_config.hpp.in
+C:/Users/rgter/Documents/programmation/RaZ/extern/fastgltf.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/common_config.h.in
+C:/Users/rgter/Documents/programmation/RaZ/extern/simdjson.cmake
+C:/Users/rgter/Documents/programmation/RaZ/extern/stb.cmake

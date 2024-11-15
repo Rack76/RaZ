@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A0124C8-9870-360D-9248-0865F1263268}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>OpenXR</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenXR.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenXR</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenXR.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenXR</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenXR.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenXR</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenXR.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenXR</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/common" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/external/jsoncpp/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/common" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/external/jsoncpp/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/common" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/external/jsoncpp/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/common" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/openxr/src/external/jsoncpp/include" /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;XR_OS_WINDOWS;XR_USE_PLATFORM_WIN32;NOMINMAX;XR_USE_GRAPHICS_API_OPENGL;OPENXR_HAVE_COMMON_CONFIG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\include;C:\Users\rgter\Documents\programmation\RaZ\extern;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr_loader_negotiation.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr_platform.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr_platform_defines.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\extra_algorithms.h" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\filesystem_utils.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\filesystem_utils.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\hex_and_handles.h" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\object_info.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\object_info.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\platform_utils.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\stdfs_conditions.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\unique_asset.h" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\xr_dependencies.h" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\src\lib_json\json_writer.cpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\api_layer_interface.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\api_layer_interface.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\exception_handling.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_core.cpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_init_data.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_init_data.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_instance.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_instance.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger_recorders.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger_recorders.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_platform.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\manifest_file.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\manifest_file.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\runtime_interface.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\runtime_interface.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\xr_generated_loader.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\xr_generated_loader.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\xr_generated_dispatch_table_core.c" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\xr_generated_dispatch_table_core.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\ZERO_CHECK.vcxproj">
+      <Project>{2694FF15-73C7-3BEA-B13F-4F90AC78EBE5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

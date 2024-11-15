@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{87D772FB-32DC-3121-89FA-A1F8F5D7C7FC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Catch2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Catch2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Catch2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Catch2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Catch2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Catch2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Catch2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Catch2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Catch2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/catch" /external:I "C:/Users/rgter/Documents/programmation/RaZ/generated-includes" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/catch" /external:I "C:/Users/rgter/Documents/programmation/RaZ/generated-includes" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/catch" /external:I "C:/Users/rgter/Documents/programmation/RaZ/generated-includes" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/rgter/Documents/programmation/RaZ/extern/catch" /external:I "C:/Users/rgter/Documents/programmation/RaZ/generated-includes" -fuse-ld=lld /w</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\rgter\Documents\programmation\RaZ\extern\catch;C:\Users\rgter\Documents\programmation\RaZ\generated-includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rgter/Documents/programmation/RaZ -BC:/Users/rgter/Documents/programmation/RaZ --check-stamp-file C:/Users/rgter/Documents/programmation/RaZ/extern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Catch2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLEW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\GLFW.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\ImGui.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Lua.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\OpenXR.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Sol2.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\Tracy.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_user_config.hpp.in;C:\Users\rgter\Documents\programmation\RaZ\extern\fastgltf.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common_config.h.in;C:\Users\rgter\Documents\programmation\RaZ\extern\simdjson.cmake;C:\Users\rgter\Documents\programmation\RaZ\extern\stb.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_benchmark.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_benchmark_all.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_chronometer.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_chronometer.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_clock.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_constructor.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_environment.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_estimate.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_execution_plan.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_optimizer.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_outlier_classification.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\catch_sample_analysis.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_analyse.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_analyse.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_benchmark_function.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_benchmark_function.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_benchmark_stats.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_benchmark_stats_fwd.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_complete_invoke.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_estimate_clock.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_measure.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_repeat.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_run_for_at_least.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_run_for_at_least.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_stats.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_stats.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\benchmark\detail\catch_timing.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_all.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_approx.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_approx.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_assertion_info.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_assertion_result.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_assertion_result.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_config.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_config.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_get_random_seed.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_get_random_seed.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_message.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_message.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_registry_hub.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_section_info.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_session.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_session.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_tag_alias.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_tag_alias_autoregistrar.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_tag_alias_autoregistrar.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_template_test_macros.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_test_case_info.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_test_case_info.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_test_macros.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_test_spec.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_test_spec.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_timer.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_timer.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_tostring.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_tostring.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_totals.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_totals.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_translate_exception.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_translate_exception.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_version.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_version.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\catch_version_macros.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generator_exception.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generator_exception.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators_adapters.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators_all.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators_random.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators_random.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\generators\catch_generators_range.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_all.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_capture.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_capture.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_config.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_config.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_enum_values_registry.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_exception.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_exception.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_generatortracker.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_generatortracker.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_registry_hub.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_registry_hub.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_reporter.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_reporter.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_reporter_factory.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_reporter_factory.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_tag_alias_registry.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_test_invoker.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_testcase.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\interfaces\catch_interfaces_testcase.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_assertion_handler.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_assertion_handler.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_case_insensitive_comparisons.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_case_insensitive_comparisons.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_case_sensitive.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_clara.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_clara.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_commandline.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_commandline.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_compare_traits.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_compiler_capabilities.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_config_android_logwrite.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_config_counter.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_config_prefix_messages.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_config_static_analysis_support.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_config_uncaught_exceptions.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_config_wchar.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_console_colour.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_console_colour.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_console_width.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_container_nonmembers.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_context.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_context.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_debug_console.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_debug_console.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_debugger.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_debugger.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_decomposer.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_decomposer.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_enforce.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_enforce.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_enum_values_registry.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_enum_values_registry.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_errno_guard.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_errno_guard.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_exception_translator_registry.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_exception_translator_registry.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_fatal_condition_handler.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_fatal_condition_handler.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_floating_point_helpers.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_floating_point_helpers.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_getenv.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_getenv.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_is_permutation.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_istream.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_istream.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_jsonwriter.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_jsonwriter.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_lazy_expr.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_lazy_expr.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_leak_detector.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_leak_detector.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_list.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_list.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_logical_traits.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_message_info.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_message_info.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_meta.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_move_and_forward.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_noncopyable.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_optional.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_output_redirect.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_output_redirect.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_parse_numbers.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_parse_numbers.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_platform.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_polyfills.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_polyfills.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_preprocessor.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_preprocessor_internal_stringify.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_preprocessor_remove_parens.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_random_floating_point_helpers.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_random_integer_helpers.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_random_number_generator.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_random_number_generator.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_random_seed_generation.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_random_seed_generation.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_reporter_registry.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_reporter_registry.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_reporter_spec_parser.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_reporter_spec_parser.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_result_type.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_result_type.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_reusable_string_stream.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_reusable_string_stream.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_run_context.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_run_context.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_section.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_section.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_sharding.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_singletons.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_singletons.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_source_line_info.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_source_line_info.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_startup_exception_registry.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_startup_exception_registry.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_stdstreams.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_stdstreams.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_stream_end_stop.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_string_manip.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_string_manip.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_stringref.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_stringref.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_tag_alias_registry.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_tag_alias_registry.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_template_test_registry.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_case_info_hasher.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_case_info_hasher.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_case_registry_impl.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_case_registry_impl.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_case_tracker.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_case_tracker.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_failure_exception.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_failure_exception.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_macro_impl.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_registry.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_registry.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_run_info.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_spec_parser.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_test_spec_parser.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_textflow.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_textflow.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_to_string.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_uncaught_exceptions.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_uncaught_exceptions.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_uniform_floating_point_distribution.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_uniform_integer_distribution.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_unique_name.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_unique_ptr.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_void_type.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_wildcard_pattern.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_wildcard_pattern.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_windows_h_proxy.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_xmlwriter.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\internal\catch_xmlwriter.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_all.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_container_properties.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_container_properties.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_contains.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_exception.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_exception.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_floating_point.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_floating_point.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_predicate.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_predicate.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_quantifiers.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_quantifiers.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_range_equals.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_string.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_string.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_templated.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_templated.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\catch_matchers_vector.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\internal\catch_matchers_impl.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\matchers\internal\catch_matchers_impl.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_automake.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_automake.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_common_base.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_common_base.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_compact.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_compact.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_console.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_console.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_cumulative_base.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_cumulative_base.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_event_listener.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_event_listener.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_helpers.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_helpers.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_json.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_json.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_junit.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_junit.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_multi.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_multi.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_registrars.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_registrars.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_sonarqube.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_sonarqube.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_streaming_base.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_streaming_base.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_tap.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_tap.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_teamcity.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_teamcity.hpp" />
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_xml.cpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporter_xml.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\catch\catch2\reporters\catch_reporters_all.hpp" />
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\generated-includes\catch2\catch_user_config.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\rgter\Documents\programmation\RaZ\ZERO_CHECK.vcxproj">
+      <Project>{2694FF15-73C7-3BEA-B13F-4F90AC78EBE5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

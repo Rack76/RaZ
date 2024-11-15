@@ -221,6 +221,7 @@ set(
     src/RaZ/Render/*.cpp
     src/RaZ/Script/*.cpp
     src/RaZ/Utils/*.cpp
+    src/RaZ/ECS/*.cpp
 
     include/RaZ/*.hpp
     include/RaZ/*.inl

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\filesystem_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\object_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\src\lib_json\json_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\src\lib_json\json_value.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\external\jsoncpp\src\lib_json\json_writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\api_layer_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_init_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger_recorders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\manifest_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\runtime_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\xr_generated_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\xr_generated_dispatch_table_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr_loader_negotiation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\include\openxr\openxr_platform_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\extra_algorithms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\filesystem_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\hex_and_handles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\object_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\platform_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\stdfs_conditions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\unique_asset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\common\xr_dependencies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\api_layer_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\exception_handling.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_init_data.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_instance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_logger_recorders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\loader_platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\manifest_file.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\runtime_interface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\loader\xr_generated_loader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rgter\Documents\programmation\RaZ\extern\openxr\src\xr_generated_dispatch_table_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rgter\Documents\programmation\RaZ\extern\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{75C554E3-DA43-3264-8364-3432BF70D4EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2B10F526-D8EE-3A53-B465-DEFD48824285}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
