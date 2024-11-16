@@ -7,12 +7,6 @@ namespace Raz
     {
     public:
         template <typename T>
-        static int id(T& instance)
-        {
-            return id<T>();
-        }
-
-        template <typename T>
         static int id()
         {
             static int typeId = counter++;

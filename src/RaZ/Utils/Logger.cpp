@@ -43,7 +43,7 @@ void Logger::info(const std::string& message) {
 }
 
 #if defined(RAZ_CONFIG_DEBUG) || defined(RAZ_FORCE_DEBUG_LOG)
-inline void Logger::debug(const std::string& message) {
+void Logger::debug(const std::string& message) {
   if (static_cast<int>(m_logLevel) < static_cast<int>(LoggingLevel::DEBUG))
     return;
 

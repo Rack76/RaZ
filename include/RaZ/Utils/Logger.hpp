@@ -36,7 +36,7 @@ public:
   /// \note Requires a logging level of "info" or above.
   /// \param message Message to be printed.
   static void info(const std::string& message);
-#if !defined(NDEBUG) || defined(RAZ_FORCE_DEBUG_LOG)
+#if defined NDEBUG || RAZ_FORCE_DEBUG_LOG
   /// Prints a debug message.
   /// \note Does nothing in a configuration other than Debug, unless RAZ_FORCE_DEBUG_LOG is defined.
   /// \note Requires a logging level of "debug" or above.
