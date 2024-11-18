@@ -1,7 +1,5 @@
 #include "RaZ/Utils/Logger.hpp"
 
-#include "tracy/Tracy.hpp"
-
 #include <iostream>
 
 namespace Raz {
@@ -55,12 +53,4 @@ void Logger::debug(const std::string& message) {
     std::cout << "[RaZ] [Debug] - " << message << '\n';
 }
 #endif
-
-void Logger::conditionalDebug(bool condition, std::string &&message) {
-#if defined(RAZ_CONFIG_DEBUG) || defined(RAZ_FORCE_DEBUG_LOG)
-    if(!condition)
-        TracyMessageCS(message.c_str(), message.size(), tracy::Color::Red, 10);
-#endif
-}
-
 } // namespace Raz

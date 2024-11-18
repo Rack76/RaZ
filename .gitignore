@@ -29,6 +29,11 @@
 .idea/
 .vs/
 
+# Visual Studio Code folders
+/out
+/.vscode
+/generatedIncludes
+
 # MacOS specific files
 .DS_Store
 

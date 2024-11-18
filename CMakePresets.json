@@ -1,0 +1,94 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "vs code",
+            "displayName": "compile without linking",
+            "generator": "MinGW Makefiles",
+            "description": "Using compilers: C = C:\\msys64\\ucrt64\\bin\\gcc.exe, CXX = C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "C:/msys64/ucrt64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Release",
+                "RAZ_USE_LUA": "OFF",
+                "RAZ_BUILD_EXAMPLES": "ON",
+                "CMAKE_CXX_FLAGS": "-O0 -c",
+                "CMAKE_EXE_LINKER_FLAGS": "-fuse-ld=lld"
+            }
+        },
+        {
+            "name": "vs code2",
+            "displayName": "compile and link",
+            "generator": "MinGW Makefiles",
+            "description": "Using compilers: C = C:\\msys64\\ucrt64\\bin\\gcc.exe, CXX = C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "C:/msys64/ucrt64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Release",
+                "RAZ_USE_LUA": "OFF",
+                "RAZ_BUILD_EXAMPLES": "ON",
+                "CMAKE_CXX_FLAGS": "-O0",
+                "CMAKE_EXE_LINKER_FLAGS": "-fuse-ld=lld"
+            }
+        },
+        {
+            "name": "vs code MSVC",
+            "displayName": "Visual Studio Community 2022 Release - amd64",
+            "description": "Using compilers for Visual Studio 17 2022 (x64 architecture)",
+            "generator": "Visual Studio 17 2022",
+            "toolset": "host=x64",
+            "architecture": "x64",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe",
+                "RAZ_USE_LUA": "OFF",
+                "RAZ_BUILD_EXAMPLES": "ON",
+                "CMAKE_CXX_FLAGS": "/Od /EHsc",
+                "ENABLE_DEBUG_INFO" : "ON",
+                "RAZ_USE_PROFILING" : "ON",
+                "RAZ_FORCE_DEBUG_LOG" : "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "buildRaZ",
+            "description": "",
+            "displayName": "compile without linking",
+            "configurePreset": "vs code",
+            "targets": [
+                "RaZ",
+                "RaZ_ECSDemo",
+                "install"
+            ]
+        },
+        {
+            "name": "buildRaZ2",
+            "description": "",
+            "displayName": "compile and link",
+            "configurePreset": "vs code2",
+            "targets": [
+                "RaZ",
+                "RaZ_ECSDemo",
+                "install"
+            ]
+        },
+        {
+            "name": "vs code MSVC-debug",
+            "displayName": "compile and link with msvc",
+            "configurePreset": "vs code MSVC",
+            "configuration": "Debug",
+            "targets": [
+                "RaZ",
+                "RaZ_ECSDemo",
+                "install"
+            ]
+        }
+    ]
+}

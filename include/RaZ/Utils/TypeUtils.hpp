@@ -6,7 +6,6 @@
 #include <string_view>
 
 namespace Raz::TypeUtils {
-
 template <typename... Args>
 struct ConstOverload {
   template <typename RetT, typename T>

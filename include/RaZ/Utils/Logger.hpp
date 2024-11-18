@@ -3,6 +3,8 @@
 
 #include <functional>
 #include <string>
+#include <iostream>
+#include "tracy/Tracy.hpp"
 
 namespace Raz {
 
@@ -23,7 +25,13 @@ public:
   static void setLoggingFunction(std::function<void(LoggingLevel, const std::string&)> logFunc) { m_logFunc = std::move(logFunc); }
   static void resetLoggingFunction() { m_logFunc = nullptr; }
 
-  static void conditionalDebug(bool condition, std::string &&message);
+  inline static void conditionalDebug(bool condition, std::string &&message) {
+#if defined(RAZ_CONFIG_DEBUG) || defined(RAZ_FORCE_DEBUG_LOG)
+    if(!condition)
+        std::cout << "error: " + message;
+#endif
+}
+
   /// Prints an error message.
   /// \note Requires a logging level of "error" or above.
   /// \param message Message to be printed.
@@ -36,7 +44,7 @@ public:
   /// \note Requires a logging level of "info" or above.
   /// \param message Message to be printed.
   static void info(const std::string& message);
-#if defined NDEBUG || RAZ_FORCE_DEBUG_LOG
+#if !defined(NDEBUG) || defined(RAZ_FORCE_DEBUG_LOG)
   /// Prints a debug message.
   /// \note Does nothing in a configuration other than Debug, unless RAZ_FORCE_DEBUG_LOG is defined.
   /// \note Requires a logging level of "debug" or above.

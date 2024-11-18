@@ -5,6 +5,7 @@
     #include <cstdlib>
     #define ALIGNED_ALLOC(size, alignment) _aligned_malloc(size, alignment)
     #define ALIGNED_FREE(pointer) _aligned_free(pointer)
+    #define ALIGN(bytes) alignas(bytes) 
 #else
     #error "unrecognized compiler, define the ALIGNED_ALLOC macro for your compiler inside Alloc.hpp" 
 #endif
