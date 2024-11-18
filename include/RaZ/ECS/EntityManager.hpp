@@ -32,7 +32,7 @@ namespace Raz
             }
         #endif 
             int entityId = entityIdAllocator.getName();
-            static VLUI<std::uint64_t>& entityType = getEntityType<ComponentTypes...>();
+            static VLUI<std::uint64_t> entityType = getEntityType<ComponentTypes...>();
             int entityTypeId = entityTypeIds[entityType] = entityTypeIdCounter++;
             archetypes[entityTypeId] = Archetype(entityTypeId, {RTTI::id<ComponentTypes>()...}, {sizeof(ComponentTypes)...});
             int entityLocalId = archetypes[entityTypeId].addEntity(entityId, components...);

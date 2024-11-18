@@ -33,6 +33,7 @@
 /out
 /.vscode
 /generatedIncludes
+CMakePresets.json
 
 # MacOS specific files
 .DS_Store
